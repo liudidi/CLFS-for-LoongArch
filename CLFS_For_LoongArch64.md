@@ -818,8 +818,8 @@ popd
 ### 3.25 MarkupSafe
 
 ```sh
-tar xvf ${DOWNLOADDIR}/markupsafe-3.0.2.tar.gz -C ${BUILD_DIRECTORY}
-pushd ${BUILD_DIRECTORY}/markupsafe-3.0.2
+tar xvf ${DOWNLOADDIR}/markupsafe-3.0.2.tar.gz -C ${BUILDDIR}
+pushd ${BUILDDIR}/markupsafe-3.0.2
 	${SYSDIR}/cross-tools/bin/pip3 wheel -w dist --no-build-isolation --no-deps ${PWD}
 	${SYSDIR}/cross-tools/bin/pip3 install --no-index --find-links dist --no-cache-dir --no-deps --force-reinstall --no-user MarkupSafe
 popd
